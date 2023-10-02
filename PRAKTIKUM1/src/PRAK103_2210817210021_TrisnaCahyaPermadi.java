@@ -9,12 +9,15 @@ public class PRAK103_2210817210021_TrisnaCahyaPermadi {
         int deretKe = 1;
         do {
             if (bilanganAwal % 2 != 0) {
-                System.out.print(" " + bilanganAwal);
+                System.out.print(bilanganAwal);
+                if (deretKe < N ) {
+                    System.out.print(", ");
+                }
                 deretKe++;
             }
             bilanganAwal++;
         }
         while (deretKe <= N);
-        input.close();;
+        input.close();
     }
 }
